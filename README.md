@@ -53,6 +53,7 @@ ENV AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 # (optional - defaults to txns.csv) Please enter CSV filename (fullpath): 
 # ----------------------------------------
 ```
+
 #### Docker
 ```sh
 # Build the image.
@@ -60,4 +61,3 @@ $ docker build -t app .
 # Run container.
 $ docker run --rm -v $(pwd)/txns.csv:/app/txns.csv --name container app Cristian ctomatis@gmail.com
 ```
-

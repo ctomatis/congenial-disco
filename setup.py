@@ -24,7 +24,7 @@ setup(
     include_package_data=True,
     author="Cristian Tomatis",
     author_email="cgtomatis@gmail.com",
-    url="https://git.naspersclassifieds.com/ctomatis/experian-py",
+    url="https://github.com/ctomatis/congenial-disco.git",
     python_requires=">=3.8",
     platforms=["any"],
     install_requires=requires(),

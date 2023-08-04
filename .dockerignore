@@ -1,7 +1,8 @@
 .env
+.git
+
 build/
 
-Dockerfile.prod
 *.egg-info
 *.zip
 

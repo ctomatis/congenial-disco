@@ -9,12 +9,13 @@ from botocore.exceptions import ClientError
 from storipy.io import read_csv
 from storipy.io.prompt import prompt
 
-# "/media/cristian/Ubuntu/dev/stori/txns.csv"
 
-
-def main():
-    # Read inputs from prompt
-    name, email, file_name = prompt()
+def main(*args):
+    if not args:
+        # Read inputs from prompt
+        name, email, file_name = prompt()
+    else:
+        name, email, file_name = args
 
     if name and email:
         file_name = file_name or "txns.csv"

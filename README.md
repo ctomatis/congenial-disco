@@ -49,8 +49,8 @@ ENV AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 (.env)$ python main.py
 # ----------------------------------------
 # (required) Please enter your name: Cristian
-# (required) Please enter your email: cgtomatis@gmail.com
-# (optional) Please enter CSV filename (fullpath): 
+# (required) Please enter your email: ctomatis@gmail.com
+# (optional - defaults to txns.csv) Please enter CSV filename (fullpath): 
 # ----------------------------------------
 ```
 #### Docker
@@ -58,6 +58,6 @@ ENV AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 # Build the image.
 $ docker build -t app .
 # Run container.
-$ docker run --rm -v $(pwd)/txns.csv:/app/txns.csv --name container app Cristian cgtomatis@olxautos.com
+$ docker run --rm -v $(pwd)/txns.csv:/app/txns.csv --name container app Cristian ctomatis@gmail.com
 ```
 

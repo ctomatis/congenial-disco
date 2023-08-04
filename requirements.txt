@@ -1,0 +1,4 @@
+boto3
+Jinja2
+mailjet_rest
+pymysql

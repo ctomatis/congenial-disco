@@ -25,6 +25,7 @@ def lambda_handler(event, context):
     html = render_body(tmpl, **body)
 
     res = send(data["user"]["email"], data["user"]["name"], html)
+    print(res)
     return res
 
 

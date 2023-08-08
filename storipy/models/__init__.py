@@ -8,7 +8,7 @@ class Account(DB):
         fields = "(%s, %s, %s)" % tuple(data[0].keys())
         values = [tuple(v.values()) for v in data]
 
-        sql = f"INSERT INTO transaction {fields} VALUES (%s,%s,%s) ON DUPLICATE KEY UPDATE amount=amount"
+        sql = f"INSERT INTO transaction {fields} VALUES (%s,%s,%s) ON DUPLICATE KEY UPDATE amount=VALUES(amount)"
         return self.create(sql, values)
 
     def credits(self) -> dict:
